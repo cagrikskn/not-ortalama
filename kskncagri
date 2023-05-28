@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class ilk {
+    public static void main(String[] args) {
+       int mat,fzk,kmy;
+       Scanner input = new Scanner(System.in);
+        System.out.println("matematik notunu gir:");
+        mat = input.nextInt();
+        System.out.println(mat);
+        System.out.println("fizik notunuzu girin");
+        fzk = input.nextInt();
+        System.out.println(fzk);
+        System.out.println("kimya notunuzu girin");
+        kmy= input.nextInt();
+        System.out.println(kmy);
+        int toplam = mat + fzk + kmy;
+        double sonuc = toplam/3.0;
+        System.out.println(sonuc);
+        System.out.print("ders ortalma:" +sonuc);
+        System.out.print(sonuc<60 ? "kaldınız":"geçtiniz");
